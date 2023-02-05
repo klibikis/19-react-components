@@ -83,5 +83,9 @@
 .dropdown__block{
     width: 100px;
     height: 100px;
-    background-color: aqua;
+    background-color: purple;
+    border-radius: 3px;
+}
+.transition{
+    transition: all 1s ease;
 }

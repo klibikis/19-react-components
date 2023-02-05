@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import { AngryJanisForm } from './assets/components/form1'
+import { AngryJanisForm } from './assets/components/AngryJanisForm'
 import { Button } from './assets/components/button'
 import { ColorDropdown } from './assets/components/ColorDropdown'
+import { ChangingCountInput } from './assets/components/ChangingCountInput'
+import { IncreasingText } from './assets/components/IncreasingText'
+import { ChangeDivColor } from './assets/components/ChangeDivColor'
+import { CloneDiv } from './assets/components/CloneDiv'
+import { MoveDiv } from './assets/components/MoveDiv'
 
 function App() {
   const [inputArray, setInputArray] = useState<string[]>([])
@@ -36,6 +41,11 @@ function App() {
         { count * 2 }
       </div>
       <ColorDropdown/>
+      <ChangingCountInput/>
+      <IncreasingText/>
+      <ChangeDivColor/>
+      <CloneDiv/>
+      <MoveDiv/>
     </div>
   )
 }

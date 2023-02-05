@@ -13,19 +13,21 @@ export const ColorDropdown = () => {
         <div className="wrapper">
             <div className="flex-row">
                 <Button
+                background = { activeColor }
                 buttonText={"+"}
                 onClick = {() => {
                     setColorBlockArray([...colorBlockArray, activeColor])
                 }}
                 />
-                <select className='select__menu' value={ activeColor }
+                <select className='select__menu' 
+                defaultValue= 'purple'
                 onChange = {(e) => {
                     setActiveColor(e.target.value)
                 }}
                 >
+                    <option value = "purple">purple</option>
                     <option value = "violet">violet</option>
                     <option value = "blueviolet">blue violet</option>
-                    <option value = "purple">purple</option>
                     <option value = "darkorchid">darkorchid</option>
                     <option value = "darkmagenta">darkmagenta</option>
                     <option value = "indigo">indigo</option>
